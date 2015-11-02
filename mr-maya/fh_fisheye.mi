@@ -1,0 +1,21 @@
+#***************************************************************
+# Author:   hxf.prc@gmail.com
+# Modified:  2015.11.2
+# Module:   fh_fisheye
+#
+# mi declarations for Mental Ray fh_fisheye shader
+#
+#***************************************************************
+
+declare shader color "fh_fisheye" (
+        scalar "fov"	#: default 180 min 0 max 360
+        )
+	#:
+	#: nodeid 84211 # Node ID for binary Maya files
+	#:
+	version 0
+	apply lens
+	scanline off
+	trace on
+
+end declare
